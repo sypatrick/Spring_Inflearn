@@ -1,10 +1,10 @@
 package com.example.validationabsrtraction;
 
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-
 
 public class Event {
 
@@ -16,7 +16,8 @@ public class Event {
     @Email
     String email;
 
-    @NotNull @Min(0)
+    @NotNull
+    @Min(0)
     Integer limit;
 
     public Integer getId() {

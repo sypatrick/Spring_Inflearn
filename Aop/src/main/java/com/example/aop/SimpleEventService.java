@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 public class SimpleEventService implements EventService{  // RealSubject
 
     @Override
+    @PerfLogging
     public void createEvent(){
 
      //   long begin = System.currentTimeMillis();   // Cross Concern , publishEvent와 중복되는 내용.
@@ -22,6 +23,7 @@ public class SimpleEventService implements EventService{  // RealSubject
     }
 
     @Override
+    @PerfLogging
     public void publishEvent(){
 
      //   long begin = System.currentTimeMillis();
@@ -36,7 +38,7 @@ public class SimpleEventService implements EventService{  // RealSubject
      //   System.out.println(System.currentTimeMillis() - begin);
     }
 
-    @Override
+
     public void delete(){
         System.out.println("Delete");
     }
