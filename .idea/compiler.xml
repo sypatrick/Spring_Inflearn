@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Aop" />
+        <module name="ValidationAbsrtraction" />
+        <module name="spring-mvc" />
+        <module name="Inflearn_study" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Aop" target="1.8" />
+      <module name="gitTEST" target="11" />
+      <module name="Inflearn_study" target="1.8" />
+      <module name="spring-mvc" target="11" />
+      <module name="ValidationAbsrtraction" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Aop" options="-parameters" />
+      <module name="Inflearn_study" options="-parameters" />
+      <module name="ValidationAbsrtraction" options="-parameters" />
+      <module name="gitTEST" options="-parameters" />
+      <module name="spring-mvc" options="-parameters" />
+    </option>
+  </component>
+</project>
